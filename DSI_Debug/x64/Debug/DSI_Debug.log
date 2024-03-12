@@ -1,0 +1,9 @@
+﻿  Reading Qt configuration (C:/Users/YUXINYU/QT/qt5.9.1/5.9.1/msvc2017_64/bin/qmake)
+  BasicAlgorithm.cpp
+  Grids_V.cpp
+  main.cpp
+C:\Users\YUXINYU\source\repos\Grids_V\DSI_Debug\BasicAlgorithm.cpp(152): warning C4715: “BasicAlgorithm::isPoint_in_Poly”: 不是所有的控件路径都返回值
+  qrc_PICTURE.cpp
+  moc_Grids_V.cpp
+  moc_BasicAlgorithm.cpp
+  DSI_Debug.vcxproj -> C:\Users\YUXINYU\source\repos\Grids_V\x64\Debug\Grids_V.exe

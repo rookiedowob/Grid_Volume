@@ -1,0 +1,301 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>DSI_DebugClass</class>
+ <widget class="QMainWindow" name="DSI_DebugClass">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1931</width>
+    <height>835</height>
+   </rect>
+  </property>
+  <property name="mouseTracking">
+   <bool>true</bool>
+  </property>
+  <property name="windowTitle">
+   <string>格则格网计算体积</string>
+  </property>
+  <property name="unifiedTitleAndToolBarOnMac">
+   <bool>false</bool>
+  </property>
+  <widget class="QWidget" name="centralWidget">
+   <widget class="QWidget" name="layoutWidget">
+    <property name="geometry">
+     <rect>
+      <x>320</x>
+      <y>40</y>
+      <width>1404</width>
+      <height>29</height>
+     </rect>
+    </property>
+    <layout class="QHBoxLayout" name="horizontalLayout_4">
+     <item>
+      <layout class="QHBoxLayout" name="horizontalLayout_2">
+       <item>
+        <widget class="QLabel" name="label_3">
+         <property name="font">
+          <font>
+           <family>SimSun-ExtB</family>
+           <pointsize>15</pointsize>
+          </font>
+         </property>
+         <property name="text">
+          <string>规则格网数量：</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLabel" name="label4">
+         <property name="font">
+          <font>
+           <family>SimSun-ExtB</family>
+           <pointsize>15</pointsize>
+          </font>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </item>
+     <item>
+      <layout class="QHBoxLayout" name="horizontalLayout_3">
+       <item>
+        <widget class="QLabel" name="label_5">
+         <property name="font">
+          <font>
+           <family>SimSun-ExtB</family>
+           <pointsize>15</pointsize>
+          </font>
+         </property>
+         <property name="text">
+          <string>      控制点数量：</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLabel" name="label6">
+         <property name="font">
+          <font>
+           <family>SimSun-ExtB</family>
+           <pointsize>15</pointsize>
+          </font>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </item>
+     <item>
+      <layout class="QHBoxLayout" name="horizontalLayout_5">
+       <item>
+        <widget class="QLabel" name="label_6">
+         <property name="font">
+          <font>
+           <family>SimSun-ExtB</family>
+           <pointsize>15</pointsize>
+          </font>
+         </property>
+         <property name="text">
+          <string>      在凸包内的规则格网数量：</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLabel" name="label7">
+         <property name="font">
+          <font>
+           <family>SimSun-ExtB</family>
+           <pointsize>15</pointsize>
+          </font>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </item>
+     <item>
+      <layout class="QHBoxLayout" name="horizontalLayout">
+       <item>
+        <widget class="QLabel" name="label_2">
+         <property name="font">
+          <font>
+           <family>SimSun-ExtB</family>
+           <pointsize>15</pointsize>
+          </font>
+         </property>
+         <property name="text">
+          <string>      体积：</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLabel" name="label">
+         <property name="font">
+          <font>
+           <family>SimSun-ExtB</family>
+           <pointsize>15</pointsize>
+          </font>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </item>
+    </layout>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menuBar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1931</width>
+     <height>26</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuFILE">
+    <property name="title">
+     <string>文件</string>
+    </property>
+    <addaction name="open"/>
+    <addaction name="close"/>
+   </widget>
+   <widget class="QMenu" name="menuHELP">
+    <property name="title">
+     <string>编辑</string>
+    </property>
+    <addaction name="clear"/>
+   </widget>
+   <widget class="QMenu" name="menu">
+    <property name="title">
+     <string>展示</string>
+    </property>
+    <addaction name="ConvexPack"/>
+    <addaction name="GridsView"/>
+    <addaction name="actionisinpoly"/>
+    <addaction name="actionIDW"/>
+    <addaction name="showmodel"/>
+    <addaction name="action2"/>
+   </widget>
+   <addaction name="menuFILE"/>
+   <addaction name="menuHELP"/>
+   <addaction name="menu"/>
+  </widget>
+  <widget class="QStatusBar" name="statusBar"/>
+  <widget class="QToolBar" name="toolBar">
+   <property name="windowTitle">
+    <string>toolBar</string>
+   </property>
+   <attribute name="toolBarArea">
+    <enum>LeftToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>false</bool>
+   </attribute>
+   <addaction name="open"/>
+   <addaction name="clear"/>
+   <addaction name="separator"/>
+   <addaction name="ConvexPack"/>
+   <addaction name="GridsView"/>
+   <addaction name="actionisinpoly"/>
+   <addaction name="separator"/>
+   <addaction name="actionIDW"/>
+   <addaction name="showmodel"/>
+   <addaction name="separator"/>
+   <addaction name="close"/>
+   <addaction name="separator"/>
+  </widget>
+  <action name="open">
+   <property name="icon">
+    <iconset>
+     <normaloff>icon/图层 6.png</normaloff>icon/图层 6.png</iconset>
+   </property>
+   <property name="text">
+    <string>打开文件</string>
+   </property>
+  </action>
+  <action name="showmodel">
+   <property name="icon">
+    <iconset>
+     <normaloff>icon/图层 4.png</normaloff>
+     <normalon>C:/Users/lenovo/Desktop/meshlab.png</normalon>icon/图层 4.png</iconset>
+   </property>
+   <property name="text">
+    <string>展示三维模型</string>
+   </property>
+  </action>
+  <action name="close">
+   <property name="icon">
+    <iconset>
+     <normaloff>icon/图层 8.png</normaloff>icon/图层 8.png</iconset>
+   </property>
+   <property name="text">
+    <string>退出程序</string>
+   </property>
+  </action>
+  <action name="clear">
+   <property name="icon">
+    <iconset>
+     <normaloff>icon/图层 3.png</normaloff>icon/图层 3.png</iconset>
+   </property>
+   <property name="text">
+    <string>清空</string>
+   </property>
+  </action>
+  <action name="ConvexPack">
+   <property name="icon">
+    <iconset>
+     <normaloff>icon/图层 1.png</normaloff>icon/图层 1.png</iconset>
+   </property>
+   <property name="text">
+    <string>绘制凸包</string>
+   </property>
+  </action>
+  <action name="GridsView">
+   <property name="icon">
+    <iconset>
+     <normaloff>icon/图层 2.png</normaloff>icon/图层 2.png</iconset>
+   </property>
+   <property name="text">
+    <string>显示规则格网</string>
+   </property>
+  </action>
+  <action name="actionisinpoly">
+   <property name="icon">
+    <iconset>
+     <normaloff>icon/图层 5.png</normaloff>icon/图层 5.png</iconset>
+   </property>
+   <property name="text">
+    <string>判断点在多边形内</string>
+   </property>
+  </action>
+  <action name="actionIDW">
+   <property name="icon">
+    <iconset>
+     <normaloff>icon/图层 0.png</normaloff>icon/图层 0.png</iconset>
+   </property>
+   <property name="text">
+    <string>反距离加权插值</string>
+   </property>
+  </action>
+  <action name="action2">
+   <property name="text">
+    <string>加密网格</string>
+   </property>
+  </action>
+ </widget>
+ <layoutdefault spacing="10" margin="12"/>
+ <resources>
+  <include location="DSI_Debug.qrc"/>
+ </resources>
+ <connections/>
+</ui>
